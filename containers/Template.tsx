@@ -1,9 +1,19 @@
+/** @jsxRuntime classic */
+/** @jsx jsx */
 import React, { Fragment } from 'react';
+import { jsx, css } from '@emotion/react';
+
+// components
+import Header from '@components/Header';
+
+const container = css({
+  backgroundColor: '#EFEFEF',
+});
 
 export default function Template() {
   return (
-    <div style={{ borderWidth: 1 }}>
-      <h1>컨테이너 템플릿</h1>
+    <div css={container}>
+      <Header />
     </div>
   );
 }

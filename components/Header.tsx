@@ -4,6 +4,6 @@
 import React, { Fragment } from 'react';
 import { jsx, css } from '@emotion/react';
 
-export default function Template() {
-  return <h1>컴포넌트 템플릿</h1>;
+export default function Header() {
+  return <h1>헤더</h1>;
 }

@@ -1,8 +1,15 @@
-import React from 'react';
-import '../styles/globals.css';
+import React, { Fragment } from 'react';
+
+// components
+import ResetCss from '@components/ResetCss';
 
 function MyApp({ Component, pageProps }: any): JSX.Element {
-  return <Component {...pageProps} />;
+  return (
+    <Fragment>
+      <ResetCss />
+      <Component {...pageProps} />
+    </Fragment>
+  );
 }
 
 export default MyApp;
